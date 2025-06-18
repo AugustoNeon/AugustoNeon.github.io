@@ -5,7 +5,7 @@
   --text-color: #ffffff;
   --secondary-text-color: rgb(181, 181, 181);
   --main-color: rgb(255, 255, 255);
-  --accent-color: #00c8f8; /* Cor de destaque para detalhes */
+  --accent-color: #00c8f8; 
   --secondary-color: rgb(85, 85, 85);
   --container-bg-color: #1e1e1e;
 }
@@ -159,7 +159,7 @@ section.visible {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 80vh;
+  height: 60vh;
   gap: 1rem;
 }
 
@@ -275,7 +275,7 @@ section.visible {
   text-align: left;
 }
 
-/* SEÇÃO SOBRE */
+
 #about .about-containers {
   gap: 2rem;
   margin-top: 2rem;
@@ -291,7 +291,7 @@ section.visible {
   text-align: left;
 }
 
-/* SEÇÃO HABILIDADES */
+
 #habilidades .experience-details-container {
   display: flex;
   flex-direction: column;
@@ -340,7 +340,6 @@ article .icon {
   cursor: default;
 }
 
-/* PRELOADER */
 #preloader {
   position: fixed;
   top: 0;
@@ -373,7 +372,6 @@ article .icon {
   100% { transform: rotate(360deg); }
 }
 
-/* FORMAÇÃO */
 .formation-container {
   margin-top: 2rem;
   display: flex;
@@ -429,7 +427,6 @@ article .icon {
   color: var(--secondary-text-color);
 }
 
-/* IDIOMAS */
 .languages-container {
     display: flex;
     justify-content: center;
@@ -437,7 +434,6 @@ article .icon {
     margin-top: 2rem;
 }
 
-/* PROJETO EM DESTAQUE */
 .single-project-container {
   background: var(--container-bg-color);
   border: 1px solid var(--secondary-color);
@@ -467,8 +463,6 @@ article .icon {
     justify-content: center;
 }
 
-
-/* CONTATO */
 .contact-form-container {
   max-width: 700px;
   margin: 2rem auto 0 auto;
@@ -512,7 +506,6 @@ form button {
   cursor: pointer;
 }
 
-/* FOOTER */
 footer {
   height: 20vh;
   margin: 0 10rem;
