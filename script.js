@@ -1,13 +1,12 @@
-// PRELOADER
 const preloader = document.getElementById('preloader');
 window.addEventListener('load', () => {
-    preloader.classList.add('fade-out');
+    preloader.style.opacity = '0';
     preloader.addEventListener('transitionend', () => {
         preloader.style.display = 'none';
     });
 });
 
-// HAMBURGER MENU
+
 function toggleMenu() {
   const menu = document.querySelector(".menu-links");
   const icon = document.querySelector(".hamburger-icon");
@@ -15,7 +14,28 @@ function toggleMenu() {
   icon.classList.toggle("open");
 }
 
-// SCROLL REVEAL ANIMATION
+const hamburgerIcon = document.querySelector(".hamburger-icon");
+const menuLinks = document.querySelectorAll(".menu-links a");
+
+hamburgerIcon.addEventListener("click", (e) => {
+    e.stopPropagation(); 
+    const menu = document.querySelector(".menu-links");
+    const icon = document.querySelector(".hamburger-icon");
+    menu.classList.toggle("open");
+    icon.classList.toggle("open");
+});
+
+menuLinks.forEach((link) => {
+    link.addEventListener("click", () => {
+        const menu = document.querySelector(".menu-links");
+        const icon = document.querySelector(".hamburger-icon");
+        if (menu.classList.contains("open")) {
+            menu.classList.remove("open");
+            icon.classList.remove("open");
+        }
+    });
+});
+
 const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
         if (entry.isIntersecting) {
